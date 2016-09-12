@@ -1,0 +1,33 @@
+﻿@model AbilisSolutions.ProgrammingExercise.Web.Models.MatrixViewModel
+
+@{
+    ViewBag.Title = "Matrix";
+}
+
+<!-- Custom Styles -->
+@section css { @Html.Partial("partial/css-matrix") }
+
+<!-- Custom Scripts -->
+@section js { @Html.Partial("partial/js-matrix") }
+
+<div class="row">
+    <div class="col-md-6">
+        @Html.Partial("controls/matrix-size", Model.MatrixSize)
+        @Html.Partial("controls/matrix-base", Model.MatrixBase)
+    </div>
+    <div class="col-md-6 ha-right">
+        <input type="checkbox" name="cb-show-prime" data-label-text="Prime Numbers" @(Model.ShowPrimeNumbers ? "checked='checked'" : string.Empty)>
+    </div>
+</div>
+
+<div id="multiplication-table-wrapper"></div>
+
+@using (Ajax.BeginForm("GetMatrixAsync", null, new AjaxOptions { UpdateTargetId = "multiplication-table-wrapper", OnSuccess = "matrixModule.onMatrixLoad" }, new { id = "frmGetMatrixAsync" }))
+{
+    <input type="hidden" id="hidMatrixSize" name="MatrixSize" value="@Model.MatrixSize" />
+    <input type="hidden" id="hidMatrixBase" name="MatrixBase" value="@((int)Model.MatrixBase)" />
+    <input type="hidden" id="hidShowPrimeNumbers" name="ShowPrimeNumbers" value="@Model.ShowPrimeNumbers.ToString()" />
+}
+
+<!-- Used Tools -->
+@Html.Partial("partial/used-tools")

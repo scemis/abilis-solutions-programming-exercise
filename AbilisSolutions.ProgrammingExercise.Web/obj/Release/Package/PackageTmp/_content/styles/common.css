@@ -1,0 +1,61 @@
+﻿body {
+  padding-top: 50px;
+}
+
+/* Page */
+.page-content {
+    padding: 40px 15px;
+}
+
+.ha-right {
+    text-align: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Navbar */
+.navbar-brand {
+    padding: 5px;
+}
+
+.navbar-brand>img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Header */
+.sub-header {
+    background-color: #ccc;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    border-color: #e0e5e6;
+    background: #f6f8f8;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    line-height: 32px;
+    border-top: 1px solid #e7e7e7;
+    display: block;
+}
+
+/* Controls */
+#matrix-size-control {
+    float:left;
+    margin-right: 5px;
+}
+
+#matrix-base-control {
+    clear:both;
+    display: inline;
+}
+
+#matrix-base-control li>a.active,
+#matrix-size-control li>a.active {
+    background-color: #ddd;
+}

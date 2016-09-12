@@ -1,0 +1,5 @@
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.Domain\bin\Debug\AbilisSolutions.ProgrammingExercise.Domain.dll
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.Domain\bin\Debug\AbilisSolutions.ProgrammingExercise.Domain.pdb
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.Domain\obj\Debug\AbilisSolutions.ProgrammingExercise.Domain.csprojResolveAssemblyReference.cache
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.Domain\obj\Debug\AbilisSolutions.ProgrammingExercise.Domain.dll
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.Domain\obj\Debug\AbilisSolutions.ProgrammingExercise.Domain.pdb

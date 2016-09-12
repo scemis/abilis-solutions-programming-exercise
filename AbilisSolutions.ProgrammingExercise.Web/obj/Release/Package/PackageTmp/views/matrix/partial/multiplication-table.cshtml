@@ -1,0 +1,43 @@
+﻿@model AbilisSolutions.ProgrammingExercise.Web.Models.MatrixViewModel
+@using System.Text
+
+<table>
+@for (int row = 0; row <= Model.MatrixSize; row++)
+{
+    <tr>
+        @for (int col = 0; col <= Model.MatrixSize; col++)
+        {
+            var i = Math.Max(0, row - 1);
+            var j = Math.Max(0, col - 1);
+
+            var item = Model.Matrix.Data[i][j];
+
+            var isFirst = row == 0 && col == 0;
+            var isOperand = (row == 0 || col == 0) && !isFirst;
+            var isDiagonal = row == col && !isFirst;
+
+            var classes = new StringBuilder();
+
+            if (isFirst) { classes.Append("first"); }
+            if (isDiagonal) { classes.AppendFormat("{0} diagonal", classes.ToString()); }
+            if (item.IsPrime) { classes.AppendFormat("{0} prime {1}", classes.ToString(), Model.ShowPrimeNumbers ? "prime-on" : string.Empty); }
+
+            if (isFirst)
+            {
+                <th class="@classes"><span class="glyphicon glyphicon-remove"></span></th>
+            }
+            else if (isOperand)
+            {
+                var operand = row == 0 ? item.DisplayY : item.DisplayX;
+                <th class="@classes">@operand</th>
+            }
+            else
+            {
+                <td class="@classes" data-toggle="tooltip" title="@item.Tooltip" data-placement="top" data-container="body">
+                    @item.DisplayValue
+                </td>
+            }
+        }
+    </tr>
+}
+</table>

@@ -1,0 +1,7 @@
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.BLL\bin\Release\AbilisSolutions.ProgrammingExercise.BLL.dll
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.BLL\bin\Release\AbilisSolutions.ProgrammingExercise.BLL.pdb
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.BLL\bin\Release\AbilisSolutions.ProgrammingExercise.Domain.dll
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.BLL\bin\Release\AbilisSolutions.ProgrammingExercise.Domain.pdb
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.BLL\obj\Release\AbilisSolutions.ProgrammingExercise.BLL.csprojResolveAssemblyReference.cache
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.BLL\obj\Release\AbilisSolutions.ProgrammingExercise.BLL.dll
+C:\Users\scemis\OneDrive\Abilis\AbilisSolutions.ProgrammingExercise\AbilisSolutions.ProgrammingExercise.BLL\obj\Release\AbilisSolutions.ProgrammingExercise.BLL.pdb

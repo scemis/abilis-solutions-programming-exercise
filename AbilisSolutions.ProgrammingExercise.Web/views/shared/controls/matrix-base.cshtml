@@ -1,0 +1,14 @@
+﻿@model Enums.MatrixBase
+@using AbilisSolutions.ProgrammingExercise.Domain
+
+<div id="matrix-base-control" class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="ddmMatrixBase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="value">@Model</span>
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="ddmMatrixBase">
+        <li><a href="javascript:;" data-base="@((int)Enums.MatrixBase.Decimal)" class="matrix-base-item@(Model == Enums.MatrixBase.Decimal ? " active" : string.Empty)">@Enums.MatrixBase.Decimal</a></li>
+        <li><a href="javascript:;" data-base="@((int)Enums.MatrixBase.Binary)" class="matrix-base-item@(Model == Enums.MatrixBase.Binary ? " active" : string.Empty)">@Enums.MatrixBase.Binary</a></li>
+        <li><a href="javascript:;" data-base="@((int)Enums.MatrixBase.Hex)" class="matrix-base-item@(Model == Enums.MatrixBase.Hex ? " active" : string.Empty)">@Enums.MatrixBase.Hex</a></li>
+    </ul>
+</div>

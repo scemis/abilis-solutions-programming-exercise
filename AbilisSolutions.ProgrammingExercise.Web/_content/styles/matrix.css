@@ -1,0 +1,37 @@
+﻿#multiplication-table-wrapper table {
+    border: 2px solid #457BA0;
+    width: 100%;
+    margin:10px 0;
+}
+
+#multiplication-table-wrapper th,
+#multiplication-table-wrapper .diagonal {
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #C6E0F5;
+}
+
+#multiplication-table-wrapper th.first {
+    font-weight: bold;
+    background-color: #fff;
+}
+
+#multiplication-table-wrapper td {
+    border: 1px solid #494949;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#multiplication-table-wrapper td:hover {
+    font-weight: bold;
+}
+
+#multiplication-table-wrapper .diagonal:hover {
+    background-color: #95CBF4;
+}
+
+#multiplication-table-wrapper td.prime-on {
+    background-color: #8fbc8f;
+}

@@ -1,0 +1,14 @@
+﻿@model Int32
+
+<div id="matrix-size-control" class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="ddmMatrixSize" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="value">@String.Format("{0}X{0}", Model)</span>
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="ddmMatrixSize">
+        @for (int i = Global.MatrixMinSize; i <= Global.MatrixMaxSize; i++)
+        {
+            <li><a href="javascript:;" data-size="@i" class="matrix-size-item@(i == Model ? " active" : string.Empty)">@String.Format("{0}x{0}", i)</a></li>
+        }
+    </ul>
+</div>

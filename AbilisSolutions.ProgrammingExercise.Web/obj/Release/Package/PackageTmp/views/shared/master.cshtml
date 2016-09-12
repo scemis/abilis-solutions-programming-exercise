@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @Html.Partial("partial/meta")
+    @RenderSection(name: "meta", required: false)
+
+    @Html.Partial("partial/css")
+    @RenderSection(name: "css", required: false)
+
+    @Html.Partial("partial/js-head")
+    @RenderSection(name: "js-head", required: false)
+</head>
+<body>
+    <!-- Header -->
+    @Html.Partial("controls/header")
+    <!-- /Header -->
+    <!-- Page Content -->
+    <div class="container">
+        <div class="page-content">
+            <div class="row">
+                <!-- Body -->
+                <div class="col-md-12">
+                    @RenderBody()
+                </div>
+                <!-- /Body -->
+            </div>
+        </div>
+    </div>
+    <!-- /Page Content -->
+    <!-- Footer -->
+    @Html.Partial("controls/footer")
+    <!-- /Footer -->
+    <!-- Scripts -->
+    @Html.Partial("partial/js")
+    @RenderSection(name: "js", required: false)
+
+    <script>
+        $(document).ready(function () {
+            $(document).trigger('js-init');
+        });
+    </script>
+    <!-- /Scripts -->
+</body>
+</html>
